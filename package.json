@@ -1,0 +1,7 @@
+{
+  "name": "aoc",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^22.10.1"
+  }
+}
