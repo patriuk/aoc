@@ -14,11 +14,11 @@ function isSafeCrude(report) {
 
         if (dir) { // desc 
             if ((left - right) < 1 || (left - right) > 3) {
-                return false
+                return false;
             }
         } else { // asc 
             if ((right - left) < 1 || (right - left) > 3) {
-                return false
+                return false;
             }
         }
 
@@ -34,7 +34,7 @@ function isSafe(report) {
         const diff = report[i] - report[i - 1];
 
         if (Math.sign(diff) !== dir || Math.abs(diff) < 1 || Math.abs(diff) > 3) {
-            return false
+            return false;
         }
     }
 
