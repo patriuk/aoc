@@ -1,7 +1,8 @@
 import fs from 'node:fs/promises';
+import path from 'node:path';
 
 async function main() {
-    const file = await fs.open('./input');
+    const file = await fs.open(path.join(import.meta.dirname, 'input'));
 
     let left = [];
     let right = [];
