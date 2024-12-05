@@ -1,5 +1,5 @@
 import { open } from "fs/promises";
-import path from "path";
+import path from "node:path";
 
 function isSafe(report) {
     const dir = report[0] > report[1] ? -1 : 1;
